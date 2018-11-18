@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="content">
     <div>
       <h1 class="title">
         blog
@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 
-.container {
+.content {
   min-height: 100vh;
   display: flex;
   justify-content: center;

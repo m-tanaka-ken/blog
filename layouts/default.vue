@@ -1,6 +1,12 @@
 <template>
   <div>
-    <nuxt/>
+    <div class="container">
+      <header>
+        Masaki Blog
+      </header>
+      <nuxt/>
+    </div>
+    <aside class="sidebar"></aside>
   </div>
 </template>
 
