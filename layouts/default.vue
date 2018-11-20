@@ -1,14 +1,21 @@
 <template>
   <div>
     <div class="container">
-      <header>
-        Masaki Blog
-      </header>
+      <global-header/>
       <nuxt/>
     </div>
-    <aside class="sidebar"></aside>
+    <global-sidebar/>
   </div>
 </template>
+
+<script>
+  import GlobalHeader from '../components/GlobalHeader'
+  import GlobalSidebar from '../components/GlobalSidebar'
+
+  export default {
+    components: { GlobalSidebar, GlobalHeader }
+  }
+</script>
 
 <style>
 html {
