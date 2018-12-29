@@ -1,11 +1,11 @@
 <template>
-  <aside class="sidebar"></aside>
+  <aside class="sidebar">sidebar</aside>
 </template>
 
 <script>
-  export default {
-    name: 'global-sidebar'
-  }
+export default {
+  name: 'GlobalSidebar'
+}
 </script>
 
 <style>

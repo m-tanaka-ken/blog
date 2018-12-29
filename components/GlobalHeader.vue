@@ -5,9 +5,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'global-header'
-  }
+export default {
+  name: 'GlobalHeader'
+}
 </script>
 
 <style>

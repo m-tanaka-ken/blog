@@ -9,12 +9,12 @@
 </template>
 
 <script>
-  import GlobalHeader from '../components/GlobalHeader'
-  import GlobalSidebar from '../components/GlobalSidebar'
+import GlobalHeader from '../components/GlobalHeader'
+import GlobalSidebar from '../components/GlobalSidebar'
 
-  export default {
-    components: { GlobalSidebar, GlobalHeader }
-  }
+export default {
+  components: { GlobalSidebar, GlobalHeader }
+}
 </script>
 
 <style>
@@ -36,5 +36,4 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
 </style>

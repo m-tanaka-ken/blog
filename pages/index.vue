@@ -9,13 +9,12 @@
 </template>
 
 <script>
-
 export default {
+  name: 'Home'
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
 .content {
   min-height: 100vh;
   display: flex;
@@ -33,5 +32,4 @@ export default {
   color: #35495e;
   letter-spacing: 1px;
 }
-
 </style>
