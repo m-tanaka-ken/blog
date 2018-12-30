@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .content {
   min-height: 100vh;
   display: flex;
