@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <global-header/>
+  <main class="main">
+    <global-header calss="header"/>
     <div class="container">
       <nuxt/>
     </div>
-    <global-sidebar/>
-  </div>
+    <global-sidebar class="sidebar"/>
+  </main>
 </template>
 
 <script>
@@ -17,5 +17,24 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.main {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  grid-template-areas:
+    'header sidebar'
+    'container sidebar';
+
+  .header {
+    grid-area: header;
+  }
+
+  .container {
+    grid-area: container;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+}
 </style>
