@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/markdownit": "^1.2.3",
     "cross-env": "^5.2.0",
     "cypress": "^3.1.4",
     "express": "^4.16.3",
-    "marked": "^0.5.2",
     "nuxt": "^2.3.4"
   },
   "devDependencies": {
