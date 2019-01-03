@@ -5,7 +5,7 @@
 <script>
 export default {
   name: 'GlobalSidebar'
-}
+};
 </script>
 
 <style lang="scss">
