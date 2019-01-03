@@ -2,7 +2,7 @@
   <section class="content">
     <div>
       <h1 class="title">
-        blog
+        <nuxt-link to="/articles/20190103/blog-opening">article</nuxt-link>
       </h1>
     </div>
   </section>
