@@ -1,10 +1,14 @@
 <template>
   <main class="main">
-    <global-header class="header"/>
+    <div class="header-container">
+      <global-header />
+    </div>
     <div class="container">
       <nuxt/>
     </div>
-    <global-sidebar class="sidebar"/>
+    <div class="sidebar-container">
+      <global-sidebar/>
+    </div>
   </main>
 </template>
 
@@ -26,19 +30,21 @@ export default {
     'header sidebar'
     'container sidebar';
 
-  .header {
+  .header-container {
     grid-area: header;
     background: #c5e6ef;
   }
 
   .container {
     grid-area: container;
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     margin-top: 50px;
+    min-width: 100%;
   }
-  .sidebar {
+
+  .sidebar-container {
     grid-area: sidebar;
     background: #2f4e73;
   }

@@ -16,13 +16,15 @@ export default {
 .header {
   display: flex;
   align-items: center;
-  padding: 0 2rem;
+  width: 860px;
+  margin: auto;
+  height: 100%;
 }
 
 .page-title {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
 }
 </style>
