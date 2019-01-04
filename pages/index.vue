@@ -1,34 +1,46 @@
 <template>
   <section class="content">
-    <div>
+    <div
+      v-for="(article, key) in summary"
+      v-if="article.url"
+      :key="key"
+      class="card"
+    >
       <h1 class="title">
-        <nuxt-link to="/articles/20190103/blog-opening">article</nuxt-link>
+        <nuxt-link :to="`/articles/${article.url}`">{{ article.title }}</nuxt-link>
       </h1>
     </div>
   </section>
 </template>
 
 <script>
+import summary from '../articles/dist/summary.json';
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  computed: {
+    summary() {
+      return summary.fileMap;
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.content {
-  min-height: 100vh;
+.card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 1rem;
+  box-shadow: 2px 3px 8px 0 rgba(0, 0, 0, 0.16);
+  width: 724px;
+
+  & + .card {
+    margin-top: 20px;
+  }
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
+  font-weight: bold;
+  font-size: 24px;
   color: #35495e;
   letter-spacing: 1px;
 }

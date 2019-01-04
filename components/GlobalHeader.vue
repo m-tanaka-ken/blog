@@ -1,6 +1,8 @@
 <template>
-  <header>
-    Masaki Blog
+  <header class="header">
+    <nuxt-link 
+      to="/" 
+      class="page-title">Masaki Blog</nuxt-link>
   </header>
 </template>
 
@@ -10,5 +12,17 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.page-title {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
 </style>
