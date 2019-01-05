@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 .main {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr 240px;
   grid-template-rows: 65px 1fr;
   grid-template-areas:
     'header sidebar'
