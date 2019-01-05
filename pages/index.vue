@@ -5,7 +5,7 @@
       v-if="article.url"
       :key="article.created_at"
     >
-      <div>{{ article.created_at | dateFormat }}</div>
+      <div>{{ article.created_at | dateFormatYMDJp }}</div>
       <h1 class="title">
         <nuxt-link :to="`/articles/${article.url}`">{{ article.title }}</nuxt-link>
       </h1>
@@ -22,19 +22,15 @@
 
 <script>
 import orderBy from 'lodash/orderBy';
-import format from 'date-fns/format';
 
 import { fileMap } from '@/articles/dist/summary.json';
 import Card from '@/components/Card';
 
 export default {
   name: 'Home',
+
   components: { Card },
-  filters: {
-    dateFormat: function(date) {
-      return format(date, 'YYYY年M月D日');
-    }
-  },
+
   computed: {
     articles() {
       return orderBy(Object.values(fileMap), ['created_at'], ['desc']);
