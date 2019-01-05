@@ -2,13 +2,7 @@
   <card>
     <h1 class="title">{{ title }}</h1>
     <div class="created-at"><time>{{ created_at | dateFormatYMDJp }}</time></div>
-    <div class="tag-container">
-      <div
-        v-for="(tag, index) in tags"
-        :key="index"
-        class="tag"
-      >{{ tag }}</div>
-    </div>
+    <tag-list :tags="tags"/>
     <div v-html="bodyHtml"/>
   </card>
 </template>
@@ -18,9 +12,10 @@ import { sourceFileArray } from '@/articles/dist/summary';
 import { name as baseTitle } from '@/package';
 
 import Card from '@/components/Card';
+import TagList from '@/components/TagList';
 
 export default {
-  components: { Card },
+  components: { Card, TagList },
 
   validate({ params }) {
     return sourceFileArray.includes(
@@ -54,19 +49,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.tag-container {
-  display: flex;
-}
-
-.tag {
-  list-style: none;
-  padding: 0 8px;
-  background: #baabcf;
-  color: #f7f7f7;
-  border-radius: 12px;
-
-  & + .tag {
-    margin-left: 10px;
-  }
-}
 </style>

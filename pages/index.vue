@@ -9,13 +9,7 @@
       <h1 class="title">
         <nuxt-link :to="`/articles/${article.url}`">{{ article.title }}</nuxt-link>
       </h1>
-      <div class="tag-container">
-        <div
-          v-for="(tag, index) in article.tags"
-          :key="index"
-          class="tag"
-        >{{ tag }}</div>
-      </div>
+      <tag-list :tags="article.tags"/>
     </card>
   </section>
 </template>
@@ -25,11 +19,12 @@ import orderBy from 'lodash/orderBy';
 
 import { fileMap } from '@/articles/dist/summary.json';
 import Card from '@/components/Card';
+import TagList from '@/components/TagList';
 
 export default {
   name: 'Home',
 
-  components: { Card },
+  components: { TagList, Card },
 
   computed: {
     articles() {
@@ -45,21 +40,5 @@ export default {
   font-size: 24px;
   color: #35495e;
   letter-spacing: 1px;
-}
-
-.tag-container {
-  display: flex;
-}
-
-.tag {
-  list-style: none;
-  padding: 0 8px;
-  background: #baabcf;
-  color: #f7f7f7;
-  border-radius: 12px;
-
-  & + .tag {
-    margin-left: 10px;
-  }
 }
 </style>
