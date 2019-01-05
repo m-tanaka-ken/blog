@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import GlobalHeader from '../components/GlobalHeader';
-import GlobalSidebar from '../components/GlobalSidebar';
+import GlobalHeader from '@/components/GlobalHeader';
+import GlobalSidebar from '@/components/GlobalSidebar';
 
 export default {
   components: { GlobalSidebar, GlobalHeader }

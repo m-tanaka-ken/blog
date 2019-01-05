@@ -1,10 +1,9 @@
 <template>
   <section class="content">
-    <div
+    <card
       v-for="article in articles"
       v-if="article.url"
       :key="article.created_at"
-      class="card"
     >
       <div>{{ article.created_at | dateFormat }}</div>
       <h1 class="title">
@@ -17,17 +16,20 @@
           class="tag"
         >{{ tag }}</div>
       </div>
-    </div>
+    </card>
   </section>
 </template>
 
 <script>
 import orderBy from 'lodash/orderBy';
 import format from 'date-fns/format';
-import { fileMap } from '../articles/dist/summary.json';
+
+import { fileMap } from '@/articles/dist/summary.json';
+import Card from '@/components/Card';
 
 export default {
   name: 'Home',
+  components: { Card },
   filters: {
     dateFormat: function(date) {
       return format(date, 'YYYY年M月D日');
@@ -42,18 +44,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 2px 3px 8px 0 rgba(0, 0, 0, 0.16);
-  width: 860px;
-
-  & + .card {
-    margin-top: 20px;
-  }
-}
-
 .title {
   font-weight: bold;
   font-size: 24px;
