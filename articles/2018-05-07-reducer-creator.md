@@ -4,7 +4,7 @@ created_at: 2018-05-07
 tags:
 - JavaScript
 - Redux
-url: 2018-05-07-reducer-creator
+url: 2018-05-07/reducer-creator
 ---
 
 # Reducer Creator
