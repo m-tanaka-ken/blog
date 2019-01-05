@@ -24,7 +24,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['@/assets/css/reboot.css'],
+  css: ['@/assets/css/reboot.css', 'highlight.js/styles/darcula.css'],
 
   /*
   ** Plugins to load before mounting the App
