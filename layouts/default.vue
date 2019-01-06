@@ -72,4 +72,23 @@ export default {
     }
   }
 }
+
+@media (max-width: 420px) {
+  .main {
+    grid-template-rows: 60px;
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .content {
+      margin: 0 auto;
+      width: 380px;
+    }
+
+    .header {
+      width: 100%;
+    }
+  }
+}
 </style>
