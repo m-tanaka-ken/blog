@@ -49,4 +49,17 @@ export default {
     background: #2f4e73;
   }
 }
+
+@media (max-width: 1100px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'container';
+
+    .sidebar-container {
+      display: none;
+    }
+  }
+}
 </style>

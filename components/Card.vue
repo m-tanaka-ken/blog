@@ -14,7 +14,6 @@ export default {
   flex-direction: column;
   padding: 1rem;
   box-shadow: 2px 3px 8px 0 rgba(0, 0, 0, 0.16);
-  width: 860px;
 
   & + .card {
     margin-top: 20px;

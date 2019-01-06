@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card {
+  width: 860px;
+}
+
 .header {
   margin-bottom: 50px;
 }
