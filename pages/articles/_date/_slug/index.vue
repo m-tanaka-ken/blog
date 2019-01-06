@@ -1,12 +1,14 @@
 <template>
-  <card>
-    <header class="header">
-      <h1 class="title">{{ title }}</h1>
-      <div class="created-at">投稿日：<time>{{ created_at | dateFormatYMDJp }}</time></div>
-      <tag-list :tags="tags"/>
-    </header>
-    <div v-html="bodyHtml"/>
-  </card>
+  <section>
+    <card>
+      <header class="header">
+        <h1 class="title">{{ title }}</h1>
+        <div class="created-at">投稿日：<time>{{ created_at | dateFormatYMDJp }}</time></div>
+        <tag-list :tags="tags"/>
+      </header>
+      <div v-html="bodyHtml"/>
+    </card>
+  </section>
 </template>
 
 <script>
@@ -51,10 +53,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  width: 860px;
-}
-
 .header {
   margin-bottom: 50px;
 }
@@ -62,5 +60,11 @@ export default {
 .created-at {
   font-size: 14px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 420px) {
+  .card {
+    width: 400px;
+  }
 }
 </style>

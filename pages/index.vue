@@ -1,5 +1,5 @@
 <template>
-  <section class="content">
+  <section>
     <card
       v-for="article in articles"
       v-if="article.url"
@@ -35,9 +35,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  width: 860px;
-}
 .title {
   font-weight: bold;
   font-size: 24px;

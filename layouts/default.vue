@@ -4,7 +4,7 @@
       <global-header />
     </div>
     <div class="container">
-      <nuxt/>
+      <nuxt class="content"/>
     </div>
     <div class="sidebar-container">
       <global-sidebar/>
@@ -35,6 +35,11 @@ export default {
     background: #c5e6ef;
   }
 
+  .header {
+    width: 860px;
+    margin: 0 auto;
+  }
+
   .container {
     grid-area: container;
     display: flex;
@@ -42,6 +47,11 @@ export default {
     justify-content: center;
     margin-top: 50px;
     min-width: 100%;
+  }
+
+  .content {
+    width: 860px;
+    margin: 0 auto;
   }
 
   .sidebar-container {

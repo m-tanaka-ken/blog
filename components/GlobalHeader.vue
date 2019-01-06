@@ -16,9 +16,8 @@ export default {
 .header {
   display: flex;
   align-items: center;
-  width: 860px;
-  margin: auto;
   height: 100%;
+  padding: 0 1rem;
 }
 
 .page-title {
