@@ -29,6 +29,7 @@ export default {
   grid-template-areas:
     'header sidebar'
     'container sidebar';
+  background: #f2f9f8;
 
   .header-container {
     grid-area: header;
