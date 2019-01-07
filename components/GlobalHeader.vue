@@ -23,7 +23,8 @@ export default {
 .page-title {
   text-decoration: none;
   color: #333;
+  font-family: 'Varela Round', sans-serif;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
 }
 </style>
