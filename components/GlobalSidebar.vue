@@ -9,7 +9,7 @@
         >
       </div>
       <h2>Masaki Tanaka</h2>
-      <p>PHPer→フロントエンドエンジニア</p>
+      <p>PHPer→FE</p>
       <div class="sns-icons">
         <a 
           class="icon-container" 
