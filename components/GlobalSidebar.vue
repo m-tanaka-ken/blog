@@ -29,7 +29,7 @@
           <img
             class="icon"
             src="/images/github-icon.png"
-            alt="twitter">
+            alt="github">
         </a>
       </div>
     </div>
