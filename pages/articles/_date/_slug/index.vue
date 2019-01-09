@@ -8,14 +8,6 @@
       </header>
       <div v-html="bodyHtml"/>
     </card>
-    <div v-if="isMobile">
-      <header class="header">
-        <h1 class="title">{{ title }}</h1>
-        <div class="created-at">投稿日：<time>{{ created_at | dateFormatYMDJp }}</time></div>
-        <tag-list :tags="tags"/>
-      </header>
-      <div v-html="bodyHtml"/>
-    </div>
   </section>
 </template>
 
@@ -61,8 +53,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card {
+  margin-top: 40px;
+}
+
 .header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .created-at {
@@ -72,7 +73,8 @@ export default {
 
 @media (max-width: 420px) {
   .card {
-    padding: 0;
+    margin-top: 0;
+    padding: 16px;
     box-shadow: none;
   }
 }

@@ -35,10 +35,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.title {
-  font-weight: bold;
-  font-size: 24px;
-  color: #35495e;
-  letter-spacing: 1px;
+.card {
+  margin-top: 50px;
+
+  & + .card {
+    margin-top: 20px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #35495e;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    width: 95%;
+    margin-top: 20px;
+  }
 }
 </style>

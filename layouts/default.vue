@@ -46,7 +46,6 @@ export default {
     display: flex;
     min-height: 100vh;
     justify-content: center;
-    margin-top: 50px;
     min-width: 100%;
   }
 
@@ -78,12 +77,11 @@ export default {
   .main {
     grid-template-rows: 60px;
 
-    .container {
-      margin-top: 20px;
-    }
-
     .content {
-      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
 
     .header {
