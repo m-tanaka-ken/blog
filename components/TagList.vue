@@ -23,6 +23,7 @@ export default {
 <style lang="scss" scoped>
 .tag-list {
   display: flex;
+  align-items: baseline;
 }
 
 .tag {
