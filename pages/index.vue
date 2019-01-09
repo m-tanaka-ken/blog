@@ -41,10 +41,4 @@ export default {
   color: #35495e;
   letter-spacing: 1px;
 }
-
-@media (max-width: 420px) {
-  .card {
-    width: 380px;
-  }
-}
 </style>

@@ -83,8 +83,7 @@ export default {
     }
 
     .content {
-      margin: 0 auto;
-      width: 380px;
+      width: 95%;
     }
 
     .header {
