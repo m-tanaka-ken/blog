@@ -3,6 +3,7 @@
     <nuxt-link 
       to="/" 
       class="page-title">Masaki Blog</nuxt-link>
+    <div class="profile">Profile</div>
   </header>
 </template>
 
@@ -16,6 +17,7 @@ export default {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
   padding: 0 1rem;
 }
@@ -26,5 +28,16 @@ export default {
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
   font-size: 24px;
+}
+
+.profile {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .profile {
+    display: block;
+  }
 }
 </style>
