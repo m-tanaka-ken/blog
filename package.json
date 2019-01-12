@@ -11,6 +11,8 @@
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "npm run build:articles && nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:text": "textlint \"articles/**/*.md\"",
+    "lint:text-fix": "textlint --fix \"articles/**/*.md\"",
     "precommit": "npm run lint"
   },
   "dependencies": {
@@ -33,6 +35,10 @@
     "nodemon": "^1.18.9",
     "prettier": "1.14.3",
     "processmd": "^4.4.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "textlint": "^11.2.1",
+    "textlint-rule-preset-jtf-style": "^2.3.2",
+    "textlint-rule-prh": "^5.2.0",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0"
   }
 }
