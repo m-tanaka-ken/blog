@@ -43,4 +43,4 @@ npmのscriptに以下で登録すると楽
 yarn run api-server
 ```
 
-json-serverのpathの使い方は[ここ](https://github.com/typicode/json-server#routes)
+json-serverのパスの使い方は[ここ](https://github.com/typicode/json-server#routes)

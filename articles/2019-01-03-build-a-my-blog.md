@@ -17,8 +17,6 @@ url: 2019-01-03/build-a-my-blog
 
 ## 使った技術
 
-- processmd（markdownパーサ）
 - nuxt.js（vue製フレームワーク）
 - Netlify（静的ホスティングサービス）
-
-
+- processmd（markdownパーサ）
