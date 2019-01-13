@@ -35,7 +35,11 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@plugins/filters.js'],
+  plugins: [
+    '@plugins/filters.js',
+    '@plugins/touchmove.js',
+    '@plugins/scroll.js'
+  ],
 
   /*
   ** Nuxt.js modules

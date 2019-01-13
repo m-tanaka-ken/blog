@@ -3,13 +3,20 @@
     <nuxt-link 
       to="/" 
       class="page-title">Masaki Blog</nuxt-link>
-    <div class="profile">Profile</div>
+    <div 
+      class="profile" 
+      @click="handleClickProfile">Profile</div>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'GlobalHeader'
+  name: 'GlobalHeader',
+  methods: {
+    handleClickProfile() {
+      this.$emit('clickProfile');
+    }
+  }
 };
 </script>
 

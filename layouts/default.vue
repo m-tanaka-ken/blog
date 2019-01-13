@@ -1,14 +1,21 @@
 <template>
-  <main class="main">
+  <main
+    v-touchmove="handleTouchmove"
+    class="main">
     <div class="header-container">
-      <global-header />
+      <global-header @clickProfile="toggleSidebar" />
     </div>
     <div class="container">
       <nuxt class="content"/>
     </div>
-    <div class="sidebar-container">
+    <div
+      :class="{show: isShow}"
+      class="sidebar-container">
       <global-sidebar/>
     </div>
+    <div 
+      class="sidebar-mask" 
+      @click="toggleSidebar"/>
   </main>
 </template>
 
@@ -17,9 +24,44 @@ import GlobalHeader from '@/components/GlobalHeader';
 import GlobalSidebar from '@/components/GlobalSidebar';
 
 export default {
-  components: { GlobalSidebar, GlobalHeader }
+  components: { GlobalSidebar, GlobalHeader },
+
+  data() {
+    return {
+      isShow: false
+    };
+  },
+
+  methods: {
+    toggleSidebar() {
+      this.isShow = !this.isShow;
+      this.toggleLockScroll();
+    },
+
+    handleTouchmove(event) {
+      if (!this.isShow) return;
+      event.preventDefault();
+      return window.clientWidth > 1100;
+    },
+
+    toggleLockScroll() {
+      const body = document.body;
+      if (this.isShow) {
+        body.classList.add('lock-scroll');
+        return;
+      }
+
+      body.classList.remove('lock-scroll');
+    }
+  }
 };
 </script>
+
+<style>
+.lock-scroll {
+  overflow: hidden;
+}
+</style>
 
 <style lang="scss" scoped>
 .main {
@@ -58,6 +100,23 @@ export default {
     grid-area: sidebar;
     background: #2f4e73;
   }
+
+  .sidebar-container {
+    z-index: 1;
+  }
+
+  .sidebar-mask {
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar-container.show + .sidebar-mask {
+    display: block;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -68,7 +127,14 @@ export default {
       'container';
 
     .sidebar-container {
+      position: absolute;
       display: none;
+      height: 100vh;
+      right: 0;
+
+      &.show {
+        display: block;
+      }
     }
   }
 }
