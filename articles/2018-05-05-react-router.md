@@ -31,7 +31,7 @@ routingのマッチングを行うベーシックなcomponentに `Route`と `Swi
 `component`はステートレスなコンポーネントに。
 
 `render`はステートを持つ（propsの受け渡しが必要な）コンポーネントに使用する
-```javascript
+```js
 <Route exact path='/' component={Home} />
 <Route
   path='/about'

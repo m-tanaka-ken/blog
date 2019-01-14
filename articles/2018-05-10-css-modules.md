@@ -19,19 +19,21 @@ cssをjsにimportしてclass名をbuild時に生成することで名前の汚�
 - css-loader
 
 loaderを設定する
-```javascript
-rules: [
-  test: /\.css$/, // testは読み込む拡張子を記述
-  use: [
-    'style-loader', // loader
-    {
-      loader: 'css-loader' // Objectの場合はloaderに指定
-      options: {
-        modules: true // css-moduleを有効にする
+```json5
+{
+  rules: [
+    test: /\.css$/, // testは読み込む拡張子を記述
+    use: [
+      'style-loader', // loader
+      {
+        loader: 'css-loader' // Objectの場合はloaderに指定
+        options: {
+          modules: true // css-moduleを有効にする
+        }
       }
-    }
+    ]
   ]
-]
+}
 ```
 
 ### CSS
@@ -48,7 +50,7 @@ Button.css
 cssファイルをimportして使う
 
 Button.js
-```javascript
+```js
 import styles from './Button.css'
 
 export default function Button() {
@@ -60,18 +62,20 @@ export default function Button() {
 
 ただ、これだけだとclass名がhashされた文字列のみになるのでwebpackに以下を追加する
 
-```javascript
-rules: [
-  test: /\.css$/, // testは読み込む拡張子を記述
-  use: [
-    'style-loader', // loader
-    {
-      loader: 'css-loader' // Objectの場合はloaderに指定
-      options: {
-        modules: true, // css-moduleを有効にする
-        localIdentName: '[local]___[hash:base64:5]' // ← localIdentNameをこのようにすると `クラス名___ハッシュ`のクラス名で生成される
+```json5
+{
+  rules: [
+    test: /\.css$/, // testは読み込む拡張子を記述
+    use: [
+      'style-loader', // loader
+      {
+        loader: 'css-loader' // Objectの場合はloaderに指定
+        options: {
+          modules: true, // css-moduleを有効にする
+          localIdentName: '[local]___[hash:base64:5]' // ← localIdentNameをこのようにすると `クラス名___ハッシュ`のクラス名で生成される
+        }
       }
-    }
+    ]
   ]
-]
+}
 ```

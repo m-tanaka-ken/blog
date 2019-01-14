@@ -12,7 +12,7 @@ url: 2018-05-06/json-server
 ### インストール
 githubのREADMEではグローバルにインストールしているがlocalでインストールした方が何かと使い勝手がいいのでlocalでインストール
 
-```
+```js
 yarn add --dev json-server
 ```
 
@@ -35,11 +35,11 @@ node_module/.bin/json-server --watch api-server --port 3001
 ### npm　scriptに登録
 npmのscriptに以下で登録すると楽
 
-```
+```js
 "api-server": "$(npm bin)/json-server --watch api-server --port 3001"
 ```
 
-```
+```js
 yarn run api-server
 ```
 
