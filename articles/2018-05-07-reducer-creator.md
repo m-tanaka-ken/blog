@@ -7,8 +7,7 @@ tags:
 url: 2018-05-07/reducer-creator
 ---
 
-# Reducer Creator
-なるものを実装してみた
+Reducer Creator なるものを実装してみた
 
 ## 動機
 actionとreducerにそれぞれ処理を書くのが面倒

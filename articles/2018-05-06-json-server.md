@@ -26,7 +26,7 @@ yarn add --dev json-server
 ### 実行
 あとは以下を実行するだけ（他のserverと競合しないようにportも指定）
 
-```
+```js
 node_module/.bin/json-server --watch api-server --port 3001
 ```
 
