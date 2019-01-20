@@ -36,10 +36,14 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  margin-top: 50px;
+  margin-top: 40px;
 
   & + .card {
     margin-top: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 40px;
   }
 
   .title {

@@ -55,6 +55,7 @@ export default {
 <style lang="scss" scoped>
 .card {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .header {
@@ -73,7 +74,7 @@ export default {
 
 @media (max-width: 420px) {
   .card {
-    margin-top: 0;
+    margin: 0;
     padding: 16px;
     box-shadow: none;
     width: 100%;
