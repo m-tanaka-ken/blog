@@ -2,6 +2,9 @@
 title: Nuxt.jsでブログ構築しました
 created_at: 2019-01-03
 tags:
+- nuxt.js
+- Netlify
+- processmd
 url: 2019-01-03/build-a-my-blog
 ---
 
