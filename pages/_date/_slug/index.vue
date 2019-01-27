@@ -37,7 +37,7 @@ export default {
 
   head() {
     const title = `${this.title} - ${baseTitle}`;
-    const url = `https://masaki-blog.info/articles/${this.params.date}/${
+    const url = `https://masaki-blog.info/${this.params.date}/${
       this.params.slug
     }`;
     return {

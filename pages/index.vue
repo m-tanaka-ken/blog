@@ -7,7 +7,7 @@
     >
       <div>{{ article.created_at | dateFormatYMDJp }}</div>
       <h1 class="title">
-        <nuxt-link :to="`/articles/${article.url}`">{{ article.title }}</nuxt-link>
+        <nuxt-link :to="`/${article.url}`">{{ article.title }}</nuxt-link>
       </h1>
       <tag-list :tags="article.tags"/>
     </card>
