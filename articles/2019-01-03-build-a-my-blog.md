@@ -34,9 +34,7 @@ Netlifyは使ったことなかったので今回使用感を知るために採�
 
 ## Markdownファイルを追加するだけでページを作成
 
-※ こちらの記事を参考にさせていただきました（というかほぼ丸パクリ）
+※ こちらの記事を参考にさせていただきました（というかほぼ丸パクリ）。
 [Nuxt.js で Markdown ベースのブログを構築する（Markdown 編）](https://jmblog.jp/posts/2018-01-17/build-a-blog-with-nuxtjs-and-markdown-1/)
-
-
 
 
