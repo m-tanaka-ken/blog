@@ -19,7 +19,7 @@ cssをjsにimportしてclass名をbuild時に生成することで名前の汚�
 - css-loader
 
 loaderを設定する
-```json5
+```js
 {
   rules: [
     test: /\.css$/, // testは読み込む拡張子を記述
@@ -62,7 +62,7 @@ export default function Button() {
 
 ただ、これだけだとclass名がhashされた文字列のみになるのでwebpackに以下を追加する
 
-```json5
+```js
 {
   rules: [
     test: /\.css$/, // testは読み込む拡張子を記述

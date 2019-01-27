@@ -63,7 +63,7 @@ url: yyyy-mm-dd/title
 上記フォーマットで書いた記事をprocessmdでjsonへコンパイルすると以下のようなjsonが生成される
 
 yyyy-mm-dd-title.json
-```json
+```js
 {
   "title": "記事のタイトル",
   "created_at": "yyyy-mm-ddT00:00:00.000Z",
@@ -86,7 +86,7 @@ yyyy-mm-dd-title.json
 更にprocessmdでは以下のような記事の一覧ファイルを生成できる
 
 summary.json
-```json
+```js
 {
   "fileMap": {
     "articles/dist/yyyy-mm-dd-title.json": {
