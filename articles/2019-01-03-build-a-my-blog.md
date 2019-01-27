@@ -24,9 +24,19 @@ url: 2019-01-03/build-a-my-blog
 - Netlify（静的ホスティングサービス）
 - processmd（markdownパーサ）
 
+フレームワークは正直何でもよかったんですが普段使う機会が無いNuxtを採用
+
+Markdownパーサーはmarkedやmarkdown-itなど試してみたんですが書いた記事から自動でurlを生成したり、記事の一覧を作ろうとするととても難しかったので断念
+
+書いた記事を扱いやすいjsonにして、更に記事をまとめたsummary.jsonを作れるprocessmdを採用
+
+Netlifyは使ったことなかったので今回使用感を知るために採用
+
 ## Markdownファイルを追加するだけでページを作成
 
-今回使ったprocessmdはMarkdownをjsonに変換してくれて、titleやtagsなど自由にオプションとして追加できるため少し凝ったレイアウトにしたい場合などに便利
+※ こちらの記事を参考にさせていただきました（というかほぼ丸パクリ）
+[Nuxt.js で Markdown ベースのブログを構築する（Markdown 編）](https://jmblog.jp/posts/2018-01-17/build-a-blog-with-nuxtjs-and-markdown-1/)
 
-更にMarkdownファイルの内容をまとめたSummaryファイルも出力できるため一覧画面の作成がとても楽だったので採用しました
+
+
 
