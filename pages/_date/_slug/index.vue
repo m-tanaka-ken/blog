@@ -6,7 +6,9 @@
         <div class="created-at">投稿日：<time>{{ created_at | dateFormatYMDJp }}</time></div>
         <tag-list :tags="tags"/>
       </header>
-      <div v-html="bodyHtml"/>
+      <div 
+        class="article"
+        v-html="bodyHtml"/>
     </card>
   </section>
 </template>
