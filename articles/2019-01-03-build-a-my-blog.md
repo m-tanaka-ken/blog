@@ -30,7 +30,7 @@ Markdownパーサーはmarkedやmarkdown-itなど試してみたんですが書�
 
 書いた記事を扱いやすいjsonにして、更に記事をまとめたsummary.jsonを作れるprocessmdを採用
 
-Netlifyは静的コンテンツのホスティングサービスでgithubと連携してpushやmargeがあればNetlifyCIでビルド＆デプロイをしてくれる
+Netlifyは静的コンテンツのホスティングサービスでGitHubと連携してpushやmargeがあればNetlifyCIでビルド＆デプロイをしてくれる
 
 使ったことなかったので今回使用感を知るために採用
 
@@ -134,10 +134,10 @@ summary.json
 ```text
 
 pages
-├index.vue // 一覧ページ
-└_date
- └_slug
-  └index.vue // 記事ページ
+├─index.vue // 一覧ページ
+└─_date/
+  └─_slug/
+    └─ index.vue // 記事ページ
     
 ```
 
@@ -209,8 +209,8 @@ asyncData({ params }) {
 </card>
 ```
 
-あとはNetlifyがgithubにpushするたびにデプロイしてくれる、とっても簡単
+あとはNetlifyがGitHubにpushするたびにデプロイしてくれる、とっても簡単
 
 ## まとめ
 
-こうしてMarkdownで記事を書くだけで記事を投稿でき、githubの草も生やせる素敵なブログができました
+こうしてMarkdownで記事を書くだけで記事を投稿でき、GitHubの草も生やせる素敵なブログができました
