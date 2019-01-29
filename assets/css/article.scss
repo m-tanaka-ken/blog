@@ -1,3 +1,12 @@
 .article {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  color: #40424b;
+  line-height: 1.7;
+
+  h2 {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eaecef;
+    margin-bottom: 15px;
+  }
 }
+
