@@ -11,25 +11,27 @@
       <h2>Masaki Tanaka</h2>
       <p>PHPer→FE</p>
       <div class="sns-icons">
-        <a 
-          class="icon-container" 
+        <a
+          class="icon-container"
           href="https://twitter.com/JfipKen"
           target="_blank"
         >
           <img
             class="icon"
             src="/images/twitter_icon.png"
-            alt="twitter">
+            alt="twitter"
+          >
         </a>
-        <a 
-          class="icon-container" 
+        <a
+          class="icon-container"
           href="https://github.com/m-tanaka-ken"
           target="_blank"
         >
           <img
             class="icon"
             src="/images/github-icon.png"
-            alt="github">
+            alt="github"
+          >
         </a>
       </div>
     </div>

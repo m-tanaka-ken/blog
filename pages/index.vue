@@ -2,14 +2,15 @@
   <section>
     <card
       v-for="article in articles"
-      v-if="article.url"
       :key="article.created_at"
     >
       <div>{{ article.created_at | dateFormatYMDJp }}</div>
       <h1 class="title">
-        <nuxt-link :to="`/${article.url}`">{{ article.title }}</nuxt-link>
+        <nuxt-link :to="`/${article.url}`">
+          {{ article.title }}
+        </nuxt-link>
       </h1>
-      <tag-list :tags="article.tags"/>
+      <tag-list :tags="article.tags" />
     </card>
   </section>
 </template>
@@ -28,7 +29,9 @@ export default {
 
   computed: {
     articles() {
-      return orderBy(Object.values(fileMap), ['created_at'], ['desc']);
+      return orderBy(Object.values(fileMap), ['created_at'], ['desc']).filter(
+        article => article.url
+      );
     }
   }
 };

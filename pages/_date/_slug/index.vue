@@ -2,11 +2,15 @@
   <section>
     <card class="article">
       <header class="header">
-        <h1 class="title">{{ title }}</h1>
-        <div class="created-at">投稿日：<time>{{ created_at | dateFormatYMDJp }}</time></div>
-        <tag-list :tags="tags"/>
+        <h1 class="title">
+          {{ title }}
+        </h1>
+        <div class="created-at">
+          投稿日：<time>{{ created_at | dateFormatYMDJp }}</time>
+        </div>
+        <tag-list :tags="tags" />
       </header>
-      <div v-html="bodyHtml"/>
+      <div v-html="bodyHtml" />
     </card>
   </section>
 </template>
