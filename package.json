@@ -19,26 +19,26 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
-    "cypress": "^3.1.4",
+    "cypress": "^3.1.5",
     "date-fns": "^1.30.1",
     "express": "^4.16.3",
     "lodash": "^4.17.11",
-    "nuxt": "^2.3.4"
+    "nuxt": "^2.4.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.11.1",
+    "eslint": "^5.13.0",
     "eslint-config-prettier": "^4.0.0",
-    "eslint-loader": "^2.0.0",
+    "eslint-loader": "^2.1.2",
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-vue": "^5.1.0",
     "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
-    "prettier": "1.16.3",
-    "processmd": "^4.4.0",
+    "nodemon": "^1.18.10",
+    "prettier": "1.16.4",
+    "processmd": "^4.4.2",
     "sass-loader": "^7.1.0",
-    "textlint": "^11.2.1",
-    "textlint-rule-preset-jtf-style": "^2.3.2",
+    "textlint": "^11.2.3",
+    "textlint-rule-preset-jtf-style": "^2.3.3",
     "textlint-rule-prh": "^5.2.0",
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
   }
