@@ -2,11 +2,7 @@
   <aside class="sidebar">
     <div class="profile">
       <div class="icon-container">
-        <img
-          class="icon"
-          src="/images/icon.png"
-          alt="my-icon"
-        >
+        <img class="icon" src="/images/icon.png" alt="my-icon" />
       </div>
       <h2>Masaki Tanaka</h2>
       <p>PHPer→FE</p>
@@ -16,22 +12,14 @@
           href="https://twitter.com/JfipKen"
           target="_blank"
         >
-          <img
-            class="icon"
-            src="/images/twitter_icon.png"
-            alt="twitter"
-          >
+          <img class="icon" src="/images/twitter_icon.png" alt="twitter" />
         </a>
         <a
           class="icon-container"
           href="https://github.com/m-tanaka-ken"
           target="_blank"
         >
-          <img
-            class="icon"
-            src="/images/github-icon.png"
-            alt="github"
-          >
+          <img class="icon" src="/images/github-icon.png" alt="github" />
         </a>
       </div>
     </div>

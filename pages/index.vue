@@ -1,9 +1,6 @@
 <template>
   <section>
-    <card
-      v-for="article in articles"
-      :key="article.created_at"
-    >
+    <card v-for="article in articles" :key="article.created_at">
       <div>{{ article.created_at | dateFormatYMDJp }}</div>
       <h1 class="title">
         <nuxt-link :to="`/${article.url}`">

@@ -1,10 +1,6 @@
 <template>
   <div class="tag-list">
-    <div
-      v-for="(tag, index) in tags"
-      :key="index"
-      class="tag"
-    >
+    <div v-for="(tag, index) in tags" :key="index" class="tag">
       {{ tag }}
     </div>
   </div>

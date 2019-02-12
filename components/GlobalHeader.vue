@@ -1,15 +1,9 @@
 <template>
   <header class="header">
-    <nuxt-link
-      to="/"
-      class="page-title"
-    >
+    <nuxt-link to="/" class="page-title">
       Masaki Blog
     </nuxt-link>
-    <div
-      class="profile"
-      @click="handleClickProfile"
-    >
+    <div class="profile" @click="handleClickProfile">
       Profile
     </div>
   </header>

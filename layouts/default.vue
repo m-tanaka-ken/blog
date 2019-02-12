@@ -1,24 +1,15 @@
 <template>
-  <main
-    v-touchmove="handleTouchmove"
-    class="main"
-  >
+  <main v-touchmove="handleTouchmove" class="main">
     <div class="header-container">
       <global-header @clickProfile="toggleSidebar" />
     </div>
     <div class="container">
       <nuxt class="content" />
     </div>
-    <div
-      :class="{ show: isShow }"
-      class="sidebar-container"
-    >
+    <div :class="{ show: isShow }" class="sidebar-container">
       <global-sidebar />
     </div>
-    <div
-      class="sidebar-mask"
-      @click="toggleSidebar"
-    />
+    <div class="sidebar-mask" @click="toggleSidebar" />
   </main>
 </template>
 
