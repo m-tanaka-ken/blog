@@ -38,6 +38,8 @@ resolversはクエリを受け取って実際に返却するデータを定義�
 
 ほぼ公式のサンプルと同じだが実際の最小限のコードはこちら
 
+`index.js`
+
 ```js
 const { ApolloServer, gql } = require('apollo-server');
 
