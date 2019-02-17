@@ -1,10 +1,10 @@
 ---
 title: Apollo Server構築メモ
-created_at:
+created_at: 2019-02-16
 tags:
 - Apollo Server
 - GraphQL
-url:
+url: 2019-02-16/apollo-server
 ---
 
 Apollo ServerとはGraphQLクライアント用のGraph API Serverを素早く構築するためのライブラリ
@@ -15,7 +15,7 @@ Apollo Serve構築方法をすぐ忘れてしまうのでメモ
 
 まず、最低限必要なライブラリをインストール
 
-```
+```text
 npm install -S apollo-server graphql
 ```
 
@@ -38,7 +38,7 @@ resolversはクエリを受け取って実際に返却するデータを定義�
 
 ほぼ公式のサンプルと同じだが実際の最小限のコードはこちら
 
-`index.js`
+- index.js
 
 ```js
 const { ApolloServer, gql } = require('apollo-server');
@@ -84,7 +84,7 @@ server.listen().then(({ url }) => {
 
 実際に実行してみる
 
-```
+```text
 node index.js
 ```
 
@@ -93,3 +93,5 @@ node index.js
 ```text
 Server ready at http://localhost:4000/
 ```
+
+以上で最小限の構築となる、更に実践的なことは別の記事でやることにします
