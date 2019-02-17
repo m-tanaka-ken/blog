@@ -11,7 +11,7 @@ Apollo ServerとはGraphQLクライアント用のGraph API Serverを素早く�
 
 Apollo Serve構築方法をすぐ忘れてしまうのでメモ
 
-正確な解説は[マニュアル](https://www.apollographql.com/docs/apollo-server/essentials/server.html#installation)を読んでください
+正確な解説は[マニュアルのBuilding a server](https://www.apollographql.com/docs/apollo-server/essentials/server.html)を読んでください
 
 ## 最低限の構築
 
