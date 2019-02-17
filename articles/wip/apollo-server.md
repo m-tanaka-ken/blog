@@ -88,7 +88,7 @@ server.listen().then(({ url }) => {
 node index.js
 ```
 
-以下が表示したら`http://localhost:4000/`からAPIドキュメントにアクセスできる
+以下が表示したら`http://localhost:4000/`からAPIドキュメントにもなるplaygroundにアクセスできる
 
 ```text
 Server ready at http://localhost:4000/
