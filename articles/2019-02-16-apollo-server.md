@@ -28,11 +28,13 @@ apollo serverはgraphqlを前提としているのでgraphqlもインストー�
 
 ### typeDefs
 
-typeDefsはtype definitionsの略でGraphQLの型を定義します
+typeDefsはtype definitionsの略でGraphQLの型を定義（schema）します
 
 ### resolvers
 
-resolversはクエリを受け取って実際に返却するデータを定義します
+resolversはschemaを実装する関数を取り入れる機構です
+
+typeDefsで設計し、resolversで設計通りの実装をするという感じでかな？
 
 ### 最小限のサンプル
 
