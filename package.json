@@ -33,7 +33,7 @@
     "eslint-loader": "^2.1.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^5.2.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.10",
     "prettier": "^1.16.4",
     "processmd": "^4.4.2",
